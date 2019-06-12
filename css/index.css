@@ -79,19 +79,45 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
+/* width: 800px; */
     @media(max-width: 800px) {
         .container {
-            /* background-color: blue; */
             width: 800px;
+            /* background-color: blue; */
         }
+        /* .container header nav {
+            display: flex;
+            flex-direction: column;
+        }
+        .container header nav a {
+
+        } */
     }
 
+ /* width: 500px; */
     @media (max-width: 500px) {
         .container {
-            /* background-color: green; */
             width: 500px;
+            }
+            .container header {
+                display: flex;
+                flex-direction: column;
+            }
+            /* .container img {
+                display: none;
+            } */
+            .container header nav {
+                display: flex;
+                flex-direction: column;
+            }
+            .container header nav a {
+                margin: bottom;
+            }
+
+
+            /* background-color: green; */
         }
-    }
+
 
 /* navigation header */
 header nav {
