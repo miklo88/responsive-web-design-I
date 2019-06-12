@@ -94,29 +94,47 @@ h1, h2, h3, h4, h5 {
         } */
     }
 
- /* width: 500px; */
+ /* width: 500px;  for mobile*/ 
+ /* header - nav - banner */
     @media (max-width: 500px) {
         .container {
-            width: 500px;
-            }
-            .container header {
-                display: flex;
-                flex-direction: column;
-            }
-            /* .container img {
-                display: none;
-            } */
-            .container header nav {
-                display: flex;
-                flex-direction: column;
-            }
-            .container header nav a {
-                margin: bottom;
-            }
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		
+/* header - nav - banner */
+        header {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+        header nav a {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid black;
+			padding: 20px;
+		}
+		header .logo {
+			order: -1;
+		}
+		.banner-img {
+            display: none;
+		}
+		/* main-content styling */
+
+		/* .main-content {
+
+		} */
 
 
             /* background-color: green; */
-        }
+    }
 
 
 /* navigation header */
@@ -149,6 +167,7 @@ header nav a:last-child {
 header .logo {
 	margin-top: 25px;
 }
+
 /* h1 button img  */
 .banner .banner-text {
 	display: inline-block;
