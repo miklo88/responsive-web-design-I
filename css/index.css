@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5 {
 		/* header .logo {
 			order: -1;
 		} */
-		.banner-img {
+		.banner .banner-img {
             display: none;
 		}
     }
