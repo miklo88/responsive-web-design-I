@@ -66,12 +66,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-
-
 /* Your code starts here! */
-
-
-
 
 /* container of everything */
 .container {
@@ -79,31 +74,33 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
-/* width: 800px; */
+/* width: 800px;  */
     @media(max-width: 800px) {
         .container {
-            width: 800px;
-            /* background-color: blue; */
-        }
-        /* .container header nav {
-            display: flex;
-            flex-direction: column;
-        }
-        .container header nav a {
-
-        } */
+			width: 90%;
+			margin: 0 auto;
+		}
+		header nav {
+			display: flex;
+			width: 90%;
+			/* vertical-align: top; */
+			margin-top: 35px;
+		}
+		/* header .logo {
+			order: -1;
+		} */
+		.banner-img {
+            display: none;
+		}
     }
 
  /* width: 500px;  for mobile*/ 
  /* header - nav - banner */
-    @media (max-width: 500px) {
+     @media (max-width: 500px) {
         .container {
 			width: 100%;
 			margin: 0 auto;
 		}
-
-		
-/* header - nav - banner */
         header {
 			width: 100%;
 			display: flex;
@@ -111,30 +108,23 @@ h1, h2, h3, h4, h5 {
 			justify-content: center;
 			align-items: center;
 		}
+
         header nav a {
 			display: flex;
 			flex-direction: column;
 			text-align: center;
 			justify-content: center;
 			align-items: center;
-			border: 1px solid black;
+			border-top: 1px solid gray;
+			border-bottom: 1px solid gray;
+			margin: 0;
 			padding: 20px;
 		}
+		
 		header .logo {
 			order: -1;
 		}
-		.banner-img {
-            display: none;
-		}
-		/* main-content styling */
-
-		/* .main-content {
-
-		} */
-
-
-            /* background-color: green; */
-    }
+    } 
 
 
 /* navigation header */
@@ -142,8 +132,16 @@ header nav {
 	display: inline-block;
 	width: 691px;
 	vertical-align: top;
+	justify-content: space-between;
     margin-top: 35px;
 }
+
+/* header nav {
+	margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
+	display: flex;
+} */
 
 header nav a {
 	margin-right: 65px;
@@ -155,20 +153,20 @@ header nav a {
 header nav a:hover {
 	text-decoration: underline;
 }
-
-header nav a:first-child {
+/* convinced it does nothing */
+/* header nav a:first-child {
 	margin-left: 0;
 }
-
 header nav a:last-child {
 	margin-right: 0;
-}
+} */
 
 header .logo {
 	margin-top: 25px;
 }
 
 /* h1 button img  */
+
 .banner .banner-text {
 	display: inline-block;
 	vertical-align: top;
@@ -192,12 +190,11 @@ header .logo {
 	background: black;
 	color: white;
 }
-.banner .img{
+.banner-img {
 	display: inline-block;
-    /* margin-top: 620px; */
-    margin: 40px;
-	padding: 60px;
-	/* figure out how to push this img down */
+    margin-top: 40px;
+	padding: 10px;
+
 }
 
 .main-content {
@@ -207,7 +204,7 @@ header .logo {
 }
 
 .main-content .top-content {
-	padding: 0 10px;
+	padding: 0 1px;
 }
 
 .main-content .top-content .text-content {
@@ -226,6 +223,7 @@ header .logo {
 
 .main-content .bottom-content {
 	margin-top: 37px;
+	/* margin: 1%; */
 	padding: 0 10px;
 }
 
@@ -236,7 +234,8 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content:last-child {
-	margin-right: 0;
+	margin: 0;
+	/* margin-right: 0; */
 }
 
 .contact {
@@ -254,6 +253,4 @@ footer {
 	text-align: center;
 	font-size: 14px;
 }
-
-
 
